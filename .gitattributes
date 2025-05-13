@@ -1,0 +1,16 @@
+# Автоматическое определение текстовых файлов и нормализация перевода строк
+* text=auto
+
+# Убедиться, что shell-скрипты Unix используют LF
+*.sh text eol=lf
+
+# Убедиться, что Windows-скрипты используют CRLF
+*.cmd text eol=crlf
+*.bat text eol=crlf
+
+# Исключить двоичные файлы от нормализации
+*.jar binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
