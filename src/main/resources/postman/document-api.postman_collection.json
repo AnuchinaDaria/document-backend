@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "b046cbbc-24bb-4323-9de1-7845e8f146a9",
+		"name": "Document API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44764055",
+		"_collection_link": "https://daria-6898360.postman.co/workspace/Daria's-Workspace~7740ea92-a712-43c0-846c-1d4acf8bc52c/collection/44764055-b046cbbc-24bb-4323-9de1-7845e8f146a9?action=share&source=collection_link&creator=44764055"
+	},
+	"item": [
+		{
+			"name": "Загрузить документ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/documents/upload\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"documents",
+						"upload\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получить все документы",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/documents\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"documents\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получить документ по ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/documents/1\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"documents",
+						"1\n"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
